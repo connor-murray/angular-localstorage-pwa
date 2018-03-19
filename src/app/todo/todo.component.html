@@ -1,0 +1,26 @@
+<div fxLayout="column">
+  <div fxLayout="row" fxLayoutAlign="center center" fxFlex="50">
+    <mat-form-field style="margin:10px">
+      <input matInput placeholder="Title" [(ngModel)]="title">
+    </mat-form-field>
+    <mat-form-field style="margin:10px">
+      <input matInput placeholder="Description" [(ngModel)]="description">
+    </mat-form-field>
+    <button mat-raised-button color="primary" style="margin:10px" (click)="add()" [disabled]="!title || !description">
+      Add
+    </button>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="center center" fxFlex="50">
+    <mat-list fxFlex="50">
+      <mat-list-item *ngFor="let todo of todos">
+        <button mat-mini-fab color="warn" (click)="remove(todo)">
+          <mat-icon>close</mat-icon>
+        </button>
+        <h3 matLine style="font-weight: bold"> {{todo.title}} </h3>
+        <p matLine>
+          <span>{{todo.description}}</span>
+        </p></mat-list-item>
+    </mat-list>
+  </div>
+</div>

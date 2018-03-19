@@ -1,0 +1,27 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "TODO",
+  "scope": "/",
+  "display": "fullscreen",
+  "start_url": "http://localhost:8080/",
+  "short_name": "TODO",
+  "theme_color": "transparent",
+  "description": "Angular local storage PWA",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32"
+    },
+    {
+      "src": "/assets/images/icon_pwa.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0"
+    }
+  ]
+}
